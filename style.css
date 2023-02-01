@@ -1,1 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+}
+
+.container .color {
+    background: blanchedalmond;
+    list-style: none;
+    margin: 13px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 25px;
+    cursor: pointer;
+    
+    transition: transform 0.3s ease; /*the transition goes on the element*/
+}
+
+.container .color:active {
+    transform: scaleX(0.92); /*the transformation goes on the active pseudoclass*/
+}
+
+.color .rect-box {
+    width: 13vw;
+    height: 16vw;
+    border-radius: 8px;
+    background: #8a6cff;
+}
+
+.color .rect-box {
+   filter: brightness(110%); /* there are quite a few filter property options, including brightness, grayscale, blur, drop-shadow*/
+}
+
+.hex-value {
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin: 12px 0 8px;
+    display: block;
+    color: #444;
+}
+
+.refresh-btn {
+    position: fixed; /* sets the button's position relative to the viewport*/
+    left: 50%; /* pushes the button 50% from the left side. This does not center it though..*/
+    transform: translateX(-50%); /* this translates the button 50 percent to allow it to be centered.*/
+    bottom: 40px;
+    outline: none;
+    color: aliceblue;
+    background: #8a6cff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 12px 20px;
+    border: 2px solid #fff;
+    box-shadow: 0 5px 25px;
+}
+
 
